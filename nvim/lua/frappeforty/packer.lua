@@ -5,7 +5,7 @@ return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim") -- package manager
 
 	-- {{ INTERFACE }} -----------------------------------------------
-	use("folke/tokyonight.nvim") -- colorscheme
+	use("ellisonleao/gruvbox.nvim") --colorscheme
 	use("nvim-lualine/lualine.nvim") -- statusbar
 
 	-- {{ TELESCOPE }} -----------------------------------------------
