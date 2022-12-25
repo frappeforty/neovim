@@ -68,7 +68,7 @@ local lspconfig = require("lspconfig")
 -- Install it using ":Mason" and/or your system package manager like pacman, dnf or apt.
 -- Append the chosen language server (say) "pyright" to "servers" list below :
 
-local servers = { "tsserver", "pyright", "tailwindcss" }
+local servers = { "tsserver", "pyright", "tailwindcss", "gopls" }
 
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup({

@@ -1,5 +1,4 @@
--- {{ LSP Config Keymaps }} ----------------------------------------------
-
+-- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap = true, silent = true }
 vim.keymap.set("n", "<space>e", vim.diagnostic.open_float, opts)
@@ -34,3 +33,5 @@ local on_attach = function(client, bufnr)
 		vim.lsp.buf.format({ async = true })
 	end, bufopts)
 end
+
+require("go").setup()

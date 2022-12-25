@@ -1,9 +1,10 @@
--- {{ Null-ls }} ---------------------------------------------------------
+-- {{ NULL-LS }} ---------------------------------------------------------
 
 -- Inject more code actions using null-ls built-in sources :
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md
-
+--
 -- Install it using ":Mason" or your system package manager like pacman, dnf or apt.
+--
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 require("null-ls").setup({
 	sources = {
@@ -14,7 +15,7 @@ require("null-ls").setup({
 		require("null-ls").builtins.formatting.shfmt,
 		require("null-ls").builtins.formatting.astyle,
 		require("null-ls").builtins.formatting.autopep8,
-		require("null-ls").builtins.formatting.gofmt,
+		require("null-ls").builtins.formatting.gofumpt,
 		require("null-ls").builtins.formatting.goimports,
 		require("null-ls").builtins.formatting.jq,
 		require("null-ls").builtins.formatting.stylua,
